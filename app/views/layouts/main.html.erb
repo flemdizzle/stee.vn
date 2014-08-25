@@ -21,7 +21,7 @@
 <body>
     <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -49,7 +49,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <!-- <img alt="Background" src="/assets/background.png" style="size: 100% auto"/> -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Steven Fleming Jr</h1>
@@ -73,9 +73,9 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <div class="row" id="skills">
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <%= image_tag("rails.png", :size => "140x140", :alt => "Picture", :class => "img-circle") %>
           <h2>Very Comfortable</h2>
             <li>Ruby</li>
             <li>Rails</li>
@@ -112,10 +112,10 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="portfolio">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"><span class="text-muted">Portfolio</span></h2>
+          <p class="lead">These are the things that I build</p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -124,22 +124,27 @@
 
       <hr class="featurette-divider">
       <!-- About -->
-      <div class="row featurette">
+      <div class="row featurette" id="about">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"><span class="text-muted">Who am I?</span></h2>
+          <p class="lead">There is a lot of stuff to know about me.</p>
         </div>
       </div>
 
       <hr class="featurette-divider">
       <!-- Contact -->
-      <div class="row featurette">
+      <div class="row featurette" id="contact">
         <div class="col-md-7">
           <h2 class="featurette-heading"><span class="text-muted">Contact me.</h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">Feel free to reach out if you have something to say.</p>
+          <a class="btn btn-lg btn-primary" href="#" role="button">Github</a>
+          <a class="btn btn-lg btn-primary" href="#" role="button">Linkedin</a>
+          <a class="btn btn-lg btn-primary" href="#" role="button">Twitter</a>
+          <a class="btn btn-lg btn-primary" href="#" role="button">Mail</a>
+          <a class="btn btn-lg btn-primary" href="#" role="button">Something</a>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
