@@ -14,12 +14,13 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <!-- NAVBAR
 ================================================== -->
 <body>
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper" id="navbar-main">
       <div class="container">
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="container">
@@ -30,14 +31,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Stee.vn</a>
+              <a class="navbar-brand smoothScroll" href="#home">Stee.vn</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" >
               <ul class="nav navbar-nav">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills" class="smoothScroll">Skills</a></li>
+                <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+                <li><a href="#about" class="smoothScroll">About</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="fa fa-github-square fa-3x" href="http://www.github.com/flemdizzle" ></a></li>
+                <li><a class="fa fa-linkedin-square fa-3x" href="http://www.linkedin.com/in/stevenhfleming/"></a></li>
+                <li><a class="fa fa-twitter-square fa-3x" href="http://www.twitter.com/flemdizzle"></a></li>
+                <li><a class="fa fa-envelope-square fa-3x" href="mailto:fleminsh@gmail.com"></a></li>
               </ul>
             </div>
           </div>
@@ -47,18 +53,13 @@
     <!-- Splash
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
+      <div id="home" class="carousel-inner">
         <div class="item active">
           <!-- <img alt="Background" src="/assets/background.png" style="size: 100% auto"/> -->
           <div class="container">
             <div class="carousel-caption">
-              <h1>Steven Fleming Jr</h1>
-              <p>Technical Recruiter & Full-Stack Web Developer</p>
-              <a class="btn btn-lg btn-primary" href="#" role="button">Github</a>
-              <a class="btn btn-lg btn-primary" href="#" role="button">Linkedin</a>
-              <a class="btn btn-lg btn-primary" href="#" role="button">Twitter</a>
-              <a class="btn btn-lg btn-primary" href="#" role="button">Mail</a>
-              <a class="btn btn-lg btn-primary" href="#" role="button">Something</a>
+              <h1 class="steven">Steven Fleming Jr</h1>
+              <h2>Technical Recruiter & Full-Stack Web Developer</h2>
             </div>
           </div>
         </div>
@@ -74,8 +75,10 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row" id="skills">
+        <h1 class="text-muted skills" >Skills</h1>
+        <p class="lead" style="text-align: center">This is what I can do.</p>
         <div class="col-lg-4">
-          <%= image_tag("rails.png", :size => "140x140", :alt => "Picture", :class => "img-circle") %>
+          <img alt="Picture" class="img-circle" height="140" src="/assets/full-bars.png" width="140" />
           <h2>Very Comfortable</h2>
             <li>Ruby</li>
             <li>Rails</li>
@@ -88,17 +91,19 @@
             <li>Paper Prototyping</li>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <img alt="Picture" class="img-circle" height="140" src="/assets/half-bars.png" width="140" />
           <h2>Learning</h2>
             <li>Objective-C</li>
             <li>Knockout.js</li>
             <li>Node.js</li>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <img alt="Picture" class="img-circle" height="140" src="/assets/empty-bars.png" width="140" />
           <h2>Want to learn</h2>
             <li>RubyMotion</li>
             <li>MongoDB</li>
+            <li>Eclipse</li>
+            <li>Angular.js</li>
             <li>MySQL Workbench</li>
             <li>Cucumber</li>
             <li>RSpec</li>
@@ -114,11 +119,31 @@
 
       <div class="row featurette" id="portfolio">
         <div class="col-md-7">
-          <h2 class="featurette-heading"><span class="text-muted">Portfolio</span></h2>
+          <h1 class="featurette-heading text-muted">Portfolio</h1>
           <p class="lead">These are the things that I build</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="/assets/github.jpg" alt="Insert Git Hub Screenshot?">
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/assets/project.jpg" href="app.heroku.com" atl="Project1">
+        </div>
+        <div class="col-md-7">
+          <h1 class="featurette-heading text-muted">Project 1</h1>
+          <p class="lead">This project does awesome stuff</p>
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h1 class="featurette-heading text-muted">Project 2</h1>
+          <p class="lead">This project also does awesome stuff</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/assets/project.jpg" href="app.heroku.com" atl="Project2">
         </div>
       </div>
 
@@ -126,40 +151,23 @@
       <!-- About -->
       <div class="row featurette" id="about">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="/assets/walking.png" alt="Steven Fleming">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading"><span class="text-muted">Who am I?</span></h2>
-          <p class="lead">There is a lot of stuff to know about me.</p>
+          <h1 class="featurette-heading text-muted">Who am I?</h1>
+          <p class="lead bold">There is a lot of stuff to know about me...</p>
+          <p>That being said I was born and raised in Arlington, Virginia and spent most of my life here enjoying everything the DC Area has to offer.  Eventually I went to Prep School in Connecticut and then I moved to Walla Walla, Washington where I got a Bachelors Degree in Geology.<br> 
+          After graduation I spent the next 3 years as a consultant traveling the United States visiting various colleges and universities working to improve their Greek Systems. I visited UGA, U of Montana, UCLA, UCI, Syracuse and Northeastern University among a bunch of other schools.<br>
+          Today I find myself once again back in Arlington living with my beautiful girlfriend and spending all of my free time working on various programming projects. My goals right now are to work on exciting projects, solve super hard problems, and to stay on top of all the new technologies in the Web Development world.
+          </p>
         </div>
       </div>
 
       <hr class="featurette-divider">
-      <!-- Contact -->
-      <div class="row featurette" id="contact">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><span class="text-muted">Contact me.</h2>
-          <p class="lead">Feel free to reach out if you have something to say.</p>
-          <a class="btn btn-lg btn-primary" href="#" role="button">Github</a>
-          <a class="btn btn-lg btn-primary" href="#" role="button">Linkedin</a>
-          <a class="btn btn-lg btn-primary" href="#" role="button">Twitter</a>
-          <a class="btn btn-lg btn-primary" href="#" role="button">Mail</a>
-          <a class="btn btn-lg btn-primary" href="#" role="button">Something</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
     </div><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
   </body>
 </html>
