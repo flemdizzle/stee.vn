@@ -150,6 +150,7 @@ body {
   .carousel .item {
     height: 550px;
   }
+  /*Make about me image resize to smaller static size*/
 
   /* Bump up size of carousel content */
   .carousel-caption {
@@ -162,6 +163,16 @@ body {
   }
   .featurette-heading {
     font-size: 50px;
+  }
+  .move{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .one{
+    order: 2;
+  }
+  .two{
+    order: 1;
   }
 }
 @media (max-width: 768px){
