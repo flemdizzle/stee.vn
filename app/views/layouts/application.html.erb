@@ -78,7 +78,6 @@
         <h1 class="text-muted skills" >Skills</h1>
         <p class="lead" style="text-align: center">This is what I can do.</p>
         <div class="col-lg-4">
-          <!-- <img alt="Picture" class="img-circle" height="140" image-url='full-bars.png' width="140" /> -->
           <%= image_tag "full-bars.png", :class => "img-circle", :height => "140", :width => "140" %>
           <h2>Very Comfortable</h2>
             <li>Ruby</li>
@@ -92,14 +91,14 @@
             <li>Paper Prototyping</li>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img alt="Picture" class="img-circle" height="140" src="/assets/half-bars.png" width="140" />
+          <%= image_tag "half-bars.png", :class => "img-circle", :height => "140", :width => "140" %>
           <h2>Learning</h2>
             <li>Objective-C</li>
             <li>Knockout.js</li>
             <li>Node.js</li>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img alt="Picture" class="img-circle" height="140" src="/assets/empty-bars.png" width="140" />
+          <%= image_tag "empty-bars.png", :class => "img-circle", :height => "140", :width => "140" %>
           <h2>Want to learn</h2>
             <li>RubyMotion</li>
             <li>MongoDB</li>
@@ -124,13 +123,13 @@
           <p class="lead">These are the things that I build<br><strong>Stee.vn built using Ruby on Rails, PostgreSQL, HTML5, CSS3, jQuery, LocalScroll, and Bootstrap.</strong></p>
         </div>
         <div class="col-md-5">
-          <a target="_blank" href="" ><img class="featurette-image img-responsive project" src="/assets/placeholder.png" alt="stee.vn"></a>
+          <a target="_blank" href="" ><%= image_tag "placeholder.png", :class => "featurette-image img-responsive project" %></a>
         </div>
       </div>
 
       <div class="row featurette move">
         <div class="col-md-5 one">
-          <a target="_blank" href="http://glacial-badlands-4316.heroku.com"><img class="featurette-image img-responsive project" src="/assets/counting.png" atl="Counting Application"></a>
+          <a target="_blank" href="http://glacial-badlands-4316.heroku.com"><%= image_tag "counting.png", :class => "featurette-image img-responsive project" %></a>
         </div>
         <div class="col-md-7 two">
           <h1 class="featurette-heading text-muted">Counting Application</h1>
@@ -144,13 +143,13 @@
           <p class="lead">Generates random Subway Sub ingredient combinations. Challenge yourself to eat one, but be careful!<br><strong>Built with Ruby on Rails, PostgreSQL, HTML5, and CSS3.</strong></p>
         </div>
         <div class="col-md-5">
-          <a target="_blank" href=""><img class="featurette-image img-responsive project" src="/assets/subway.png" atl="Subway Roulette"></a>
+          <a target="_blank" href=""><%= image_tag "subway.png", :class => "featurette-image img-responsive project" %></a>
         </div>
       </div>
 
       <div class="row featurette move">
         <div class="col-md-5 one">
-          <a target="_blank" href=""><img class="featurette-image img-responsive project" src="/assets/senior_nav.png" atl="seniornavigator.org"></a>
+          <a target="_blank" href=""><%= image_tag "senior_nav.png", :class => "featurette-image img-responsive project" %></a>
         </div>
         <div class="col-md-7 two">
           <h1 class="featurette-heading text-muted">Senior Navigator</h1>
@@ -162,7 +161,7 @@
       <!-- About -->
       <div class="row featurette" id="about">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/assets/walking.png" alt="Steven Fleming">
+          <%= image_tag "walking.png", :class => "featurette-image img-responsive" %>
         </div>
         <div class="col-md-7">
           <h1 class="featurette-heading text-muted">Who am I?</h1>
@@ -177,6 +176,5 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <%= image_tag "empty-bars.png" %>
   </body>
 </html>

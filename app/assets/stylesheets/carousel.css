@@ -56,7 +56,7 @@ body {
 
 .carousel .item {
   height: 725px;
-  background: url('background.png');
+  background: asset-data-url("background.png");
   background-size: cover;
   background-position: center;
 }
