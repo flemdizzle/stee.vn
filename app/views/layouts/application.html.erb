@@ -78,7 +78,8 @@
         <h1 class="text-muted skills" >Skills</h1>
         <p class="lead" style="text-align: center">This is what I can do.</p>
         <div class="col-lg-4">
-          <img alt="Picture" class="img-circle" height="140" src="/assets/full-bars.png" width="140" />
+          <!-- <img alt="Picture" class="img-circle" height="140" image-url='full-bars.png' width="140" /> -->
+          <%= image_tag "full-bars.png", :class => "img-circle", :height => "140", :width => "140" %>
           <h2>Very Comfortable</h2>
             <li>Ruby</li>
             <li>Rails</li>
@@ -176,5 +177,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <%= image_tag "empty-bars.png" %>
   </body>
 </html>
