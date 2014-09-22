@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyracer',  platforms: :ruby
 gem 'less-rails'
 # gem 'twitter-bootstrap-rails'
-gem  'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -29,11 +29,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'rake', '~> 10.3.2'
-gem 'i18n', '~> 0.6.11'
-gem 'minitest', '~> 5.4.0'
+# gem 'i18n', '~> 0.6.11'
+# gem 'minitest', '~> 5.4.0'
 
-require 'rubygems'
-require 'bundler/setup'
+# require 'rubygems'
+# require 'bundler/setup'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
