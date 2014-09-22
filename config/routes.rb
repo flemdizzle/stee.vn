@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :abouts
+  # resources :abouts
 
   root to: 'abouts#index'
 

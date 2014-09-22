@@ -54,7 +54,7 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div id="home" class="carousel-inner">
-        <div class="item active">
+        <div class="background item active">
           <div class="container">
             <div class="carousel-caption">
               <h1 class="steven">Steven Fleming Jr</h1>
@@ -139,20 +139,30 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h1 class="featurette-heading text-muted">Subway Roulette</h1>
-          <p class="lead">Generates random Subway Sub ingredient combinations. Challenge yourself to eat one, but be careful!<br><strong>Built with Ruby on Rails, PostgreSQL, HTML5, and CSS3.</strong></p>
+          <p class="lead">Generates random Subway Sub ingredient combinations. Challenge yourself to eat one, but be careful!<br><strong>Built with Ruby on Rails, PostgreSQL, HTML5, CSS3, and Foundation Five.</strong></p>
         </div>
         <div class="col-md-5">
-          <a target="_blank" href=""><%= image_tag "subway.png", :class => "featurette-image img-responsive project" %></a>
+          <a target="_blank" href="http://fathomless-atoll-9086.herokuapp.com/"><%= image_tag "subway.png", :class => "featurette-image img-responsive project" %></a>
         </div>
       </div>
 
       <div class="row featurette move">
         <div class="col-md-5 one">
-          <a target="_blank" href=""><%= image_tag "senior_nav.png", :class => "featurette-image img-responsive project" %></a>
+          <a target="_blank" href="https://github.com/flemdizzle/Web_Scraper"><%= image_tag "scraper.png", :class => "featurette-image img-responsive project" %></a>
         </div>
+        <div class="col-md-7 two">
+          <h1 class="featurette-heading text-muted">Web Scraper</h1>
+          <p class="lead">This simple web scraper iterates through an array of yelp pages and scrapes content off the page and compiles it in to a JSON file.<br><strong>Built with Node.js, Express.js, Cheerio, and obviously super sweet Javascript!</strong></p>
+        </div>
+      </div>
+
+      <div class="row featurette">
         <div class="col-md-7 two">
           <h1 class="featurette-heading text-muted">Senior Navigator</h1>
           <p class="lead">Built during Capital One's Creating 4 Communities Hackathon, an event aimed at helping small Non-Profits migrate existing static HTML/PHP websites to more manageable CMS based websites. I was responsible for building the "feature image scroller", a "sponsor carousel", and two dynamically updating pages of the site.<br><strong>Built with Wordpress, Various WP Plugins, HTML5 and CSS3.</strong></p>
+        </div>
+        <div class="col-md-5 one">
+          <a target="_blank" href=""><%= image_tag "senior_nav.png", :class => "featurette-image img-responsive project" %></a>
         </div>
       </div>
 
