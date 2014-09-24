@@ -29,6 +29,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'rake', '~> 10.3.2'
+
+gem 'pry'
 # gem 'i18n', '~> 0.6.11'
 # gem 'minitest', '~> 5.4.0'
 

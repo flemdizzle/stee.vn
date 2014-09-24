@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'urls/new'
+  resources :urls, :only => [:show, :new, :create]
+
   # resources :abouts
 
   root to: 'abouts#index'
