@@ -50,9 +50,14 @@
         </div>
       </div>
     </div>
-    
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <% if flash[:shortened_id].present? %>
+      <p class='shorened-link' >
+        the shortened url is available <%= link_to 'here',
+        url_url(flash[:shortened_id]) %>
+        (Right click and copy link to share it).
+      </p>
+      <% end %>
+
+    <%= yield %>
   </body>
 </html>
