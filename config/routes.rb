@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'urls/new'
+  # get 'urls/new'
   resources :urls, :only => [:show, :new, :create]
 
   # resources :abouts
