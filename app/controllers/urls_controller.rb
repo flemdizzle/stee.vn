@@ -1,7 +1,19 @@
 class UrlsController < ApplicationController
   layout 'main'
+
+  def hex_random_generator
+    require 'SecureRandom'
+    hex = SecureRandom.urlsafe_base64(3)
+    # if hex is uniq
+    # return hex
+    # else
+    # hex_random_generator
+    # end
+  end
+
   def new
     @shortened_url = Url.new
+    @hex = hex_random_generator
   end
 
   def create

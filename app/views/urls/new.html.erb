@@ -6,9 +6,9 @@
    <%= form.text_field :url %>
 </p>
 
-<% if @shortened_url.errors[:url].any? %>
+<% if @shortened_url.errors.any? %>
 <p class='error-messages'>
-   the given url <%= @shortened_url.errors[:url].to_sentence %>.
+   <%= @shortened_url.errors.full_messages %>.
 </p>
 <% end %>
 
@@ -17,3 +17,5 @@
 </p>
 
 <% end %>
+
+<%= @hex %>
