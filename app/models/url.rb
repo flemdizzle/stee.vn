@@ -1,7 +1,8 @@
 class Url < ActiveRecord::Base
+  before_validation :hex_random_generator
    validates :url, presence: true
-   # validates :hex, uniqueness: true, presence: true
-   before_save :hex_random_generator
+   validates :hex, uniqueness: true, presence: true
+
 
    # def initialize(attributes={})
    #    super
