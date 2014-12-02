@@ -1,0 +1,14 @@
+<table>
+	<thead>
+	  <tr>
+	    <th>Url</th>
+	    <th>Short Link</th>
+	  </tr>
+	</thead>
+<% @urls.each do |url| %>
+	<tr>
+		<td><%= url.url %></td>
+		<td>stee.vn/<%= url.hex %></td>
+	</tr>
+<% end %>
+</table>

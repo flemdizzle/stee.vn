@@ -1,5 +1,8 @@
 class UrlsController < ApplicationController
   layout 'main'
+  def index
+    @urls = Url.all
+  end
 
   def new
     @shortened_url = Url.new
@@ -9,7 +12,7 @@ class UrlsController < ApplicationController
     @shortened_url = Url.new(url_params)
     if @shortened_url.save
       flash[:shortened_id] = @shortened_url.hex
-      redirect_to new_url_url
+      redirect_to urls_path
     else
       render :action => "new"
     end
