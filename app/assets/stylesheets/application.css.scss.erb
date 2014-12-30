@@ -14,10 +14,12 @@
  *= require_self
  *= require_tree ../../../vendor/assets/stylesheets/.
  */
+ //= depend_on_asset "background.png"
+ 
 .background {
   height: 725px;
   background-color: gray;
-  background-image: url(<%= asset_path('background.png')%>);
+  background-image: url('<%= asset_path('background.png')%>');
   background-size: cover;
   background-position: center;
 }
