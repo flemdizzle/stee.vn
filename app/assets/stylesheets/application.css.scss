@@ -19,8 +19,6 @@
 .background {
   height: 725px;
   background-color: gray;
-  // background-image: url('<%= asset_path("background.png") %> ');
-  // background: image-url('background.png');
   background-image: url(image-path('background.png'));
   background-size: cover;
   background-position: center;
