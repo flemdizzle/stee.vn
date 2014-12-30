@@ -201,16 +201,16 @@ body {
 
 
  */
-/* line 19, /Users/stevenfleming/Documents/Programming/stee_vn/app/assets/stylesheets/application.css.scss.erb */
+/* line 20, /Users/stevenfleming/Documents/Programming/stee_vn/app/assets/stylesheets/application.css.scss */
 .background {
   height: 725px;
   background-color: gray;
-  background-image: url("/assets/background.png");
+  background: url(/assets/background.png);
   background-size: cover;
   background-position: center;
 }
 
-/* line 27, /Users/stevenfleming/Documents/Programming/stee_vn/app/assets/stylesheets/application.css.scss.erb */
+/* line 29, /Users/stevenfleming/Documents/Programming/stee_vn/app/assets/stylesheets/application.css.scss */
 .app-description {
   position: absolute;
   margin-top: -20px;
