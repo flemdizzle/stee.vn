@@ -28,7 +28,7 @@ config.action_mailer.smtp_settings = {
   enable_starttls_auto: true  }
 
 # Specify what domain to use for mailer URLs
-config.action_mailer.default_url_options = {host: "localhost:3000"}
+# config.action_mailer.default_url_options = {host: "localhost:3000"}
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
