@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/resume' => "users#new"
+  resources :users
   # get 'urls/new'
   resources :urls, :only => [:index, :show, :new, :create]
 

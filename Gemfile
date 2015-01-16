@@ -34,6 +34,9 @@ gem 'pry'
 # gem 'i18n', '~> 0.6.11'
 # gem 'minitest', '~> 5.4.0'
 
+
+gem 'figaro'
+
 # require 'rubygems'
 # require 'bundler/setup'
 
